@@ -1,0 +1,45 @@
+<div class="container-fluid wff">
+    <div class="tab-content col-sm-10">
+        <!--<div data-spy="scroll" data-target="#navbar-example2" data-offset="0" class="scrollspy-example">-->
+            <label class="txt col-sm-12" id="info">
+                <input type="text" class="col-sm-12" placeholder="基本信息">
+            </label>
+            <ul>
+                <li>责任人:张鑫 13070162187</li>
+                <li>责任单位:南风里居委会</li>
+            </ul>
+            <label class="txt col-sm-12 mar" id="name">
+                <input type="text" class="col-sm-12" placeholder="请输入栏目名称">
+            </label>
+            <input-file></input-file>
+            <label class="txt col-sm-12" id="resident">
+                <input type="text" class="col-sm-12" placeholder="发表评论">
+            </label>
+            <ol class="olist">
+                <li class="col-sm-12" ng-repeat="i in data">
+                    <p class="col-sm-9">{{i.name}}:{{i.cont}}</p>
+                    <span class="col-sm-2">{{i.date |  date:"yyyy-MM-dd HH:mm:ss"}}</span>
+                    <span class="col-sm-1">{{i.hf}}</span>
+                </li>
+                <!--<li>-->
+                    <!--<render-msg data="listDate"></render-msg>-->
+                <!--</li>-->
+            </ol>
+            <div class="reply"><textarea class="form-control replys" rows="3" ng-model="txt" ng-keydown="reply(txt)"></textarea></div>
+            <p class="col-sm-2 btn-parent" ng-click="vray(txt)"><button class="btn">发送</button></p>
+        <!--</div>-->
+    </div>
+    <div class="col-md-2">
+        <nav id="navbar-example2" class="navbar nav-side">
+            <div class="timeline-wrap clearfix">
+                <span class="circle top"></span>
+                <!--<span class="circle bottom"></span>-->
+                <ul class="nav navbar-nav time-line bla">
+                    <li class=""><a href="#info">基本信息</a></li>
+                    <li class="active"><a href="#name">请输入栏目名称</a></li>
+                    <li class="dropdown"><a href="#resident">居民预约</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</div>

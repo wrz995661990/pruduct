@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="../dist/css/bootstrap.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="../font/iconfont.css">
+</head>
+<body ng-app="myApp" data-spy="scroll" data-target="#navbar-example2" data-offset="0" class="scrollspy-example">
+    <!--导航-->
+    <nav class="navbar navbar-default blue">
+        <div class="container-fluid">
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">注册</a></li>
+                    <li><a href="#">登录</a></li>
+                    <li><a href="#">通知</a></li>
+                    <li><a href="#">设置</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+    <!--<div class="container-fluid nav2">-->
+        <div class="title">
+            <div class="col-sm-2 tit">
+                <h3>三鑫智慧社区</h3>
+                <p>一站式惠民服务平台</p>
+            </div>
+            <div class="col-sm-9">
+                    <ul class="row">
+                        <li class="col-sm-2 jiantou" ui-sref="home" ui-sref-active="blues">首页</li>
+                        <li class="col-sm-3 jiantou" ui-sref="group" ui-sref-active="blues">社区团体活动服务 <a href="#"> > </a></li>
+                        <li class="col-sm-3 jiantou" ui-sref="party" ui-sref-active="blues" >党组织活动服务 <a href="#"> > </a></li>
+                        <li class="col-sm-3 jiantou" ui-sref="autonomy" ui-sref-active="blues" >居民自治活动服务 <a href="#"> > </a></li>
+                    </ul>
+            </div>
+        </div>
+    <!--</div>-->
+    <div class="main">
+        <ui-view></ui-view>
+    </div>
+    <!--引入js文件-->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="../dist/js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/angular.js"></script>
+    <script type="text/javascript" src="js/angular-ui-router.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/config.js"></script>
+    <script type="text/javascript" src="js/directive.js"></script>
+    <script type="text/javascript" src="js/project.js"></script>
+</body>
+</html>
